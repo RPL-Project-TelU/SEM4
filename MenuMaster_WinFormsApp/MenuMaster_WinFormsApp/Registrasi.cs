@@ -84,11 +84,11 @@ namespace MenuMaster_WinFormsApp
                 {
                     sqlconn.Open();
                     SqlCommand sqlcmd = new SqlCommand("UserAdd", sqlconn);
-                    sqlcmd.Parameters.AddWithValue("@Nama", txt_Username.Text.Trim());
+                    sqlcmd.Parameters.AddWithValue("@NamaUser", txt_Username.Text.Trim());
                     sqlcmd.Parameters.AddWithValue("@NamaAwal", txt_NamaAwal.Text.Trim());
                     sqlcmd.Parameters.AddWithValue("@NamaAkhir", txt_NamaAkhir.Text.Trim());
                     sqlcmd.Parameters.AddWithValue("@Email", txt_Email.Text.Trim());
-                    sqlcmd.Parameters.AddWithValue("@Password", txt_Pass.Text.Trim());
+                    sqlcmd.Parameters.AddWithValue("@PasswordUser", txt_Pass.Text.Trim());
                     sqlcmd.Parameters.AddWithValue("@ConfirmPassword", txt_ConfirmPass.Text.Trim());
                     sqlcmd.ExecuteNonQuery();
                     MessageBox.Show("berhasil dibuat");
