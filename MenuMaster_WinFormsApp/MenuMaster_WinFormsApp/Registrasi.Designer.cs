@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label_Nama = new System.Windows.Forms.Label();
-            this.txt_Nama = new System.Windows.Forms.TextBox();
+            this.txt_Username = new System.Windows.Forms.TextBox();
             this.label_NaAw = new System.Windows.Forms.Label();
             this.txt_NamaAwal = new System.Windows.Forms.TextBox();
             this.label_NaAk = new System.Windows.Forms.Label();
@@ -41,6 +41,7 @@
             this.label_ConfirmPass = new System.Windows.Forms.Label();
             this.txt_ConfirmPass = new System.Windows.Forms.TextBox();
             this.btn_registrasi = new System.Windows.Forms.Button();
+            this.btn_close = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label_Nama
@@ -48,17 +49,18 @@
             this.label_Nama.AutoSize = true;
             this.label_Nama.Location = new System.Drawing.Point(32, 34);
             this.label_Nama.Name = "label_Nama";
-            this.label_Nama.Size = new System.Drawing.Size(39, 15);
+            this.label_Nama.Size = new System.Drawing.Size(60, 15);
             this.label_Nama.TabIndex = 0;
-            this.label_Nama.Text = "Nama";
+            this.label_Nama.Text = "Username";
+            this.label_Nama.Click += new System.EventHandler(this.label_Nama_Click_1);
             // 
-            // txt_Nama
+            // txt_Username
             // 
-            this.txt_Nama.Location = new System.Drawing.Point(114, 31);
-            this.txt_Nama.Name = "txt_Nama";
-            this.txt_Nama.Size = new System.Drawing.Size(138, 23);
-            this.txt_Nama.TabIndex = 1;
-            this.txt_Nama.TextChanged += new System.EventHandler(this.txt_Nama_TextChanged);
+            this.txt_Username.Location = new System.Drawing.Point(114, 31);
+            this.txt_Username.Name = "txt_Username";
+            this.txt_Username.Size = new System.Drawing.Size(138, 23);
+            this.txt_Username.TabIndex = 1;
+            this.txt_Username.TextChanged += new System.EventHandler(this.txt_Nama_TextChanged);
             // 
             // label_NaAw
             // 
@@ -126,6 +128,7 @@
             // 
             this.txt_Pass.Location = new System.Drawing.Point(114, 178);
             this.txt_Pass.Name = "txt_Pass";
+            this.txt_Pass.PasswordChar = '*';
             this.txt_Pass.Size = new System.Drawing.Size(138, 23);
             this.txt_Pass.TabIndex = 9;
             this.txt_Pass.TextChanged += new System.EventHandler(this.txt_Pass_TextChanged);
@@ -144,6 +147,7 @@
             // 
             this.txt_ConfirmPass.Location = new System.Drawing.Point(114, 212);
             this.txt_ConfirmPass.Name = "txt_ConfirmPass";
+            this.txt_ConfirmPass.PasswordChar = '*';
             this.txt_ConfirmPass.Size = new System.Drawing.Size(138, 23);
             this.txt_ConfirmPass.TabIndex = 11;
             this.txt_ConfirmPass.TextChanged += new System.EventHandler(this.txt_ConfirmPass_TextChanged);
@@ -158,12 +162,24 @@
             this.btn_registrasi.UseVisualStyleBackColor = true;
             this.btn_registrasi.Click += new System.EventHandler(this.btn_registrasi_Click);
             // 
+            // btn_close
+            // 
+            this.btn_close.BackColor = System.Drawing.Color.Red;
+            this.btn_close.Location = new System.Drawing.Point(241, 2);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(51, 23);
+            this.btn_close.TabIndex = 13;
+            this.btn_close.Text = "close";
+            this.btn_close.UseVisualStyleBackColor = false;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
             // Registrasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(295, 310);
+            this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_registrasi);
             this.Controls.Add(this.txt_ConfirmPass);
             this.Controls.Add(this.label_ConfirmPass);
@@ -175,8 +191,9 @@
             this.Controls.Add(this.label_NaAk);
             this.Controls.Add(this.txt_NamaAwal);
             this.Controls.Add(this.label_NaAw);
-            this.Controls.Add(this.txt_Nama);
+            this.Controls.Add(this.txt_Username);
             this.Controls.Add(this.label_Nama);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Registrasi";
             this.Text = "Registrasi";
             this.Load += new System.EventHandler(this.Registrasi_Load);
@@ -188,7 +205,7 @@
         #endregion
 
         private Label label_Nama;
-        private TextBox txt_Nama;
+        private TextBox txt_Username;
         private Label label_NaAw;
         private TextBox txt_NamaAwal;
         private Label label_NaAk;
@@ -200,5 +217,6 @@
         private Label label_ConfirmPass;
         private TextBox txt_ConfirmPass;
         private Button btn_registrasi;
+        private Button btn_close;
     }
 }
