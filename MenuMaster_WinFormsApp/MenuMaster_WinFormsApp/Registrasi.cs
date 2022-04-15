@@ -93,7 +93,7 @@ namespace MenuMaster_WinFormsApp
                     sqlcmd.ExecuteNonQuery();
                     MessageBox.Show("berhasil dibuat");
                     Clear();
-                    this.Hide();
+                    
                 }
             }
             
