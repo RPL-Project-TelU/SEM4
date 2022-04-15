@@ -17,21 +17,14 @@ namespace MenuMaster_WinFormsApp
             InitializeComponent();
         }
 
+        private void Simpan_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Kembali_Click(object sender, EventArgs e)
         {
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Nama_Click(object sender, EventArgs e)
-        {
-            Nama.Text = textBox1.Text
-        }
-
-
     }
 }

@@ -67,7 +67,6 @@
             this.Nama.Size = new System.Drawing.Size(49, 20);
             this.Nama.TabIndex = 2;
             this.Nama.Text = "Nama";
-            this.Nama.Click += new System.EventHandler(this.Nama_Click);
             // 
             // Username
             // 

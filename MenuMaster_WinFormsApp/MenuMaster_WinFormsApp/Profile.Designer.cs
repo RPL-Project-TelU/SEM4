@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Kembali = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.Nama = new System.Windows.Forms.Label();
             this.Username = new System.Windows.Forms.Label();
@@ -40,18 +39,10 @@
             this.Alamat = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Kembali = new System.Windows.Forms.Button();
+            this.Simpan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Kembali
-            // 
-            this.Kembali.Location = new System.Drawing.Point(642, 354);
-            this.Kembali.Name = "Kembali";
-            this.Kembali.Size = new System.Drawing.Size(94, 29);
-            this.Kembali.TabIndex = 0;
-            this.Kembali.Text = "Kembali";
-            this.Kembali.UseVisualStyleBackColor = true;
-            this.Kembali.Click += new System.EventHandler(this.Kembali_Click);
             // 
             // textBox1
             // 
@@ -59,7 +50,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(125, 27);
             this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Nama
             // 
@@ -69,7 +59,6 @@
             this.Nama.Size = new System.Drawing.Size(49, 20);
             this.Nama.TabIndex = 2;
             this.Nama.Text = "Nama";
-            this.Nama.Click += new System.EventHandler(this.Nama_Click);
             // 
             // Username
             // 
@@ -143,11 +132,33 @@
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
+            // Kembali
+            // 
+            this.Kembali.Location = new System.Drawing.Point(642, 354);
+            this.Kembali.Name = "Kembali";
+            this.Kembali.Size = new System.Drawing.Size(94, 29);
+            this.Kembali.TabIndex = 12;
+            this.Kembali.Text = "Kembali";
+            this.Kembali.UseVisualStyleBackColor = true;
+            this.Kembali.Click += new System.EventHandler(this.Kembali_Click);
+            // 
+            // Simpan
+            // 
+            this.Simpan.Location = new System.Drawing.Point(501, 354);
+            this.Simpan.Name = "Simpan";
+            this.Simpan.Size = new System.Drawing.Size(94, 29);
+            this.Simpan.TabIndex = 13;
+            this.Simpan.Text = "Simpan";
+            this.Simpan.UseVisualStyleBackColor = true;
+            this.Simpan.Click += new System.EventHandler(this.Simpan_Click);
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Simpan);
+            this.Controls.Add(this.Kembali);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Alamat);
             this.Controls.Add(this.textBox5);
@@ -159,7 +170,6 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Nama);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Kembali);
             this.Name = "Profile";
             this.Text = "Profile";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -169,8 +179,6 @@
         }
 
         #endregion
-
-        private Button Kembali;
         private TextBox textBox1;
         private Label Nama;
         private Label Username;
@@ -182,5 +190,7 @@
         private Label Alamat;
         private TextBox textBox5;
         private PictureBox pictureBox1;
+        private Button Kembali;
+        private Button Simpan;
     }
 }
