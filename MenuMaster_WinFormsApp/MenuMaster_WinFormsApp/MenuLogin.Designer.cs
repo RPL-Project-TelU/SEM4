@@ -1,4 +1,6 @@
-﻿namespace MenuMaster_WinFormsApp
+﻿using System.Resources;
+
+namespace MenuMaster_WinFormsApp
 {
     partial class MenuLogin
     {
@@ -32,14 +34,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-<<<<<<< Updated upstream
-=======
+
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
->>>>>>> Stashed changes
+
             this.SuspendLayout();
             // 
             // button1
@@ -92,16 +93,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-<<<<<<< Updated upstream
+
             this.ClientSize = new System.Drawing.Size(584, 561);
-=======
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+
+            //this.BackgroundImage = ((System.Drawing.Image)(ResourceSet.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(400, 400);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
->>>>>>> Stashed changes
+
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -121,11 +122,10 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Button button2;
-<<<<<<< Updated upstream
-=======
+
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private Button button3;
->>>>>>> Stashed changes
+
     }
 }

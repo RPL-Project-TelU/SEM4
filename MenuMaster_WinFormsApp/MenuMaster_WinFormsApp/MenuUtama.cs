@@ -16,5 +16,40 @@ namespace MenuMaster_WinFormsApp
         {
             InitializeComponent();
         }
+
+        private void txtOrderAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dudProducts_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAddToOrder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblItemsOrdered_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNewOrder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtOrderAddress_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

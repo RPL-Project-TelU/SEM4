@@ -39,8 +39,6 @@ namespace MenuMaster_WinFormsApp
 
 
         }
-<<<<<<< Updated upstream
-=======
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -68,6 +66,5 @@ namespace MenuMaster_WinFormsApp
             Registrasi panggil = new Registrasi();
             panggil.Show();
         }
->>>>>>> Stashed changes
     }
 }
