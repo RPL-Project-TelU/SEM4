@@ -16,5 +16,10 @@ namespace MenuMaster_WinFormsApp
         {
             InitializeComponent();
         }
+
+        private void Keranjang_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
