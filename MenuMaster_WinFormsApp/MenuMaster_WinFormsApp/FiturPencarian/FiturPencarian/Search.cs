@@ -50,12 +50,12 @@ namespace FiturPencarian
             {
                 if (Bool = data[i])
                 {
-                    HalamanHasilPencarian panggil = new HalamanHasilPencarian();
+                    HasilPencarian panggil = new HasilPencarian();
                     panggil.Show();
                 }
                 else
                 {
-                    PencarianTidakTersedia panggil = new PencarianTidakTersedia();
+                    HasilPencarianTidakTersedia panggil = new HasilPencarianTidakTersedia();
                     panggil.Show();
                 }
             }
