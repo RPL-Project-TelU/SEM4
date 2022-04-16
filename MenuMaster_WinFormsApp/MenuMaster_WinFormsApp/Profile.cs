@@ -21,9 +21,9 @@ namespace MenuMaster_WinFormsApp
         {
             try
             {
-                if (String.IsNullOrEmpty(Nama.Text) || String.IsNullOrEmpty(Username.Text))
+                if (String.IsNullOrEmpty(textBox1.Text)| String.IsNullOrEmpty(textBox2.Text))
                 {
-                    throw new Exception("Text 1 dan 2 tidak boleh NULL");
+                    throw new Exception("Nama dan Username tidak boleh NULL");
                 }
                 else
                 {
@@ -36,6 +36,7 @@ namespace MenuMaster_WinFormsApp
             }
         }
 
+
         private void Kembali_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -44,5 +45,7 @@ namespace MenuMaster_WinFormsApp
             this.Close();
             
         }
+
+        
     }
 }
