@@ -19,12 +19,30 @@ namespace MenuMaster_WinFormsApp
 
         private void Simpan_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                if (String.IsNullOrEmpty(Nama.Text) || String.IsNullOrEmpty(Username.Text))
+                {
+                    throw new Exception("Text 1 dan 2 tidak boleh NULL");
+                }
+                else
+                {
+                    MessageBox.Show("Data Berhasil disimpan");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Kembali_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            MenuUtama objUI = new MenuUtama();
+            objUI.ShowDialog();
+            this.Close();
+            
         }
     }
 }

@@ -16,5 +16,13 @@ namespace MenuMaster_WinFormsApp
         {
             InitializeComponent();
         }
+
+        private void Profile_Click(object sender, EventArgs e)
+        {
+            Profile F2 = new Profile();
+            F2.Show();
+
+
+        }
     }
 }
