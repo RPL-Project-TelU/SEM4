@@ -17,6 +17,11 @@ namespace MenuMaster_WinFormsApp
             InitializeComponent();
         }
 
+        int itemsOrdered;
+        const int numberOfProducts = 10;
+        //Product[] products = new Product[numberOfProducts];
+
+
         private void txtOrderAddress_TextChanged(object sender, EventArgs e)
         {
 
