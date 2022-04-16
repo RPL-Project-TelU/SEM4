@@ -67,5 +67,20 @@ namespace MenuMaster_WinFormsApp
             Registrasi panggil = new Registrasi();
             panggil.Show();
         }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
+
+        private void button4_Click(object sender, EventArgs e)//button english
+        {
+            button3.Text = "registration";
+        }
+
+        private void button5_Click(object sender, EventArgs e)//button indonesia
+        {
+
+        }
     }
 }

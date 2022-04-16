@@ -47,7 +47,7 @@
             // label_Nama
             // 
             this.label_Nama.AutoSize = true;
-            this.label_Nama.Location = new System.Drawing.Point(32, 34);
+            this.label_Nama.Location = new System.Drawing.Point(15, 34);
             this.label_Nama.Name = "label_Nama";
             this.label_Nama.Size = new System.Drawing.Size(60, 15);
             this.label_Nama.TabIndex = 0;
@@ -100,7 +100,7 @@
             // label_email
             // 
             this.label_email.AutoSize = true;
-            this.label_email.Location = new System.Drawing.Point(32, 144);
+            this.label_email.Location = new System.Drawing.Point(15, 144);
             this.label_email.Name = "label_email";
             this.label_email.Size = new System.Drawing.Size(36, 15);
             this.label_email.TabIndex = 6;
@@ -117,7 +117,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 181);
+            this.label1.Location = new System.Drawing.Point(15, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 15);
             this.label1.TabIndex = 8;
