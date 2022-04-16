@@ -75,7 +75,8 @@ namespace MenuMaster_WinFormsApp
 
         private void button4_Click(object sender, EventArgs e)//button english
         {
-            button3.Text = "registration";
+            
+            //button3.Text = "registration";
         }
 
         private void button5_Click(object sender, EventArgs e)//button indonesia
