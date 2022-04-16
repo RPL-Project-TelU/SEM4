@@ -21,9 +21,9 @@ namespace MenuMaster_WinFormsApp
         {
             try
             {
-                if (String.IsNullOrEmpty(textBox1.Text)| String.IsNullOrEmpty(textBox2.Text))
+                if (String.IsNullOrEmpty(textBox1.Text) | String.IsNullOrEmpty(textBox2.Text) | String.IsNullOrEmpty(textBox1.Text) | String.IsNullOrEmpty(textBox2.Text) | String.IsNullOrEmpty(textBox3.Text) | String.IsNullOrEmpty(textBox4.Text) | String.IsNullOrEmpty(textBox5.Text))
                 {
-                    throw new Exception("Nama dan Username tidak boleh NULL");
+                    throw new Exception("Text tidak boleh NULL");
                 }
                 else
                 {
