@@ -75,7 +75,15 @@ namespace MenuMaster_WinFormsApp
 
         private void button4_Click(object sender, EventArgs e)//button english
         {
-            
+            Config config = new Config();
+            try
+            {
+                JSON_Config Model = config.ReadConfig();
+                MessageBox.Show(Text, "JSON config berhasil di buat");
+            }catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Membuat json config");
+            }
             //button3.Text = "registration";
         }
 
