@@ -117,5 +117,87 @@ namespace MenuMaster_WinFormsApp
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Config config = new Config();
+            try
+            {
+                JSON_Config Model = config.ReadConfig();
+                //MessageBox.Show(Text, "JSON config berhasil di buat");
+
+                string message1 = (Model.Lang == "en") ? "Username" : "Username";
+                string message2 = (Model.Lang == "en") ? "Firstname" : "Nama awal";
+                string message3 = (Model.Lang == "en") ? "Lastname" : "Nama akhir";
+                string message4 = (Model.Lang == "en") ? "Email" : "Surel";
+                string message5 = (Model.Lang == "en") ? "Password" : "Kata sandi";
+                string message6 = (Model.Lang == "en") ? "Confirm password" : "Konfirmasi kata sandi";
+                string message7 = (Model.Lang == "en") ? "Create account" : "Buat akun";
+
+                label_Nama.Text         = message1;
+                label2.Text             = message2;
+                label3.Text             = message3;
+                label_email.Text        = message4;
+                label1.Text             = message5;
+                label_ConfirmPass.Text  = message6;
+                btn_registrasi.Text     = message7;
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Membuat json config");
+                config.WriteConfig();
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Config config = new Config();
+            try
+            {
+                JSON_Config Model = config.ReadConfig();
+                //MessageBox.Show(Text, "JSON config berhasil di buat");
+
+                string message1 = (Model.Lang == "id") ? "Username" : "Username";
+                string message2 = (Model.Lang == "id") ? "Firstname" : "Nama awal";
+                string message3 = (Model.Lang == "id") ? "Lastname" : "Nama akhir";
+                string message4 = (Model.Lang == "id") ? "Email" : "Surel";
+                string message5 = (Model.Lang == "id") ? "Password" : "Kata sandi";
+                string message6 = (Model.Lang == "id") ? "Confirm password" : "Konfirmasi kata sandi";
+                string message7 = (Model.Lang == "id") ? "Create account" : "Buat akun";
+
+                label_Nama.Text         = message1;
+                label2.Text             = message2;
+                label3.Text             = message3;
+                label_email.Text        = message4;
+                label1.Text             = message5;
+                label_ConfirmPass.Text  = message6;
+                btn_registrasi.Text     = message7;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Membuat json config");
+                config.WriteConfig();
+            }
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_email_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

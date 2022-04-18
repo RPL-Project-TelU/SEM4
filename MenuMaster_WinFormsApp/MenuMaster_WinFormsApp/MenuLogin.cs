@@ -79,17 +79,44 @@ namespace MenuMaster_WinFormsApp
             try
             {
                 JSON_Config Model = config.ReadConfig();
-                MessageBox.Show(Text, "JSON config berhasil di buat");
+                //MessageBox.Show(Text, "JSON config berhasil di buat");
+
+                string message1 = (Model.Lang == "en") ? "Registration" : "Registrasi";
+                string message2 = (Model.Lang == "en") ? "Login" : "Masuk";
+
+
+                button3.Text = message1;
+                button1.Text = message2;
+
             }catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Membuat json config");
+                config.WriteConfig();
             }
             //button3.Text = "registration";
         }
 
         private void button5_Click(object sender, EventArgs e)//button indonesia
         {
+            Config config = new Config();
+            try
+            {
+                JSON_Config Model = config.ReadConfig();
+                //MessageBox.Show(Text, "JSON config berhasil di buat");
 
+                string message1 = (Model.Lang == "id") ? "Registration" : "Registrasi";
+                string message2 = (Model.Lang == "id") ? "Login" : "Masuk";
+
+
+                button3.Text = message1;
+                button1.Text = message2;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Membuat json config");
+                config.WriteConfig();
+            }
         }
     }
 }

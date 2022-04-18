@@ -30,9 +30,7 @@
         {
             this.label_Nama = new System.Windows.Forms.Label();
             this.txt_Username = new System.Windows.Forms.TextBox();
-            this.label_NaAw = new System.Windows.Forms.Label();
             this.txt_NamaAwal = new System.Windows.Forms.TextBox();
-            this.label_NaAk = new System.Windows.Forms.Label();
             this.txt_NamaAkhir = new System.Windows.Forms.TextBox();
             this.label_email = new System.Windows.Forms.Label();
             this.txt_Email = new System.Windows.Forms.TextBox();
@@ -42,6 +40,10 @@
             this.txt_ConfirmPass = new System.Windows.Forms.TextBox();
             this.btn_registrasi = new System.Windows.Forms.Button();
             this.btn_close = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label_Nama
@@ -62,16 +64,6 @@
             this.txt_Username.TabIndex = 1;
             this.txt_Username.TextChanged += new System.EventHandler(this.txt_Nama_TextChanged);
             // 
-            // label_NaAw
-            // 
-            this.label_NaAw.AutoSize = true;
-            this.label_NaAw.Location = new System.Drawing.Point(15, 71);
-            this.label_NaAw.Name = "label_NaAw";
-            this.label_NaAw.Size = new System.Drawing.Size(68, 15);
-            this.label_NaAw.TabIndex = 2;
-            this.label_NaAw.Text = "Nama Awal";
-            this.label_NaAw.Click += new System.EventHandler(this.label2_Click);
-            // 
             // txt_NamaAwal
             // 
             this.txt_NamaAwal.Location = new System.Drawing.Point(114, 68);
@@ -79,15 +71,6 @@
             this.txt_NamaAwal.Size = new System.Drawing.Size(138, 23);
             this.txt_NamaAwal.TabIndex = 3;
             this.txt_NamaAwal.TextChanged += new System.EventHandler(this.txt_NamaAwal_TextChanged);
-            // 
-            // label_NaAk
-            // 
-            this.label_NaAk.AutoSize = true;
-            this.label_NaAk.Location = new System.Drawing.Point(15, 105);
-            this.label_NaAk.Name = "label_NaAk";
-            this.label_NaAk.Size = new System.Drawing.Size(70, 15);
-            this.label_NaAk.TabIndex = 4;
-            this.label_NaAk.Text = "Nama Akhir";
             // 
             // txt_NamaAkhir
             // 
@@ -105,6 +88,7 @@
             this.label_email.Size = new System.Drawing.Size(36, 15);
             this.label_email.TabIndex = 6;
             this.label_email.Text = "Email";
+            this.label_email.Click += new System.EventHandler(this.label_email_Click);
             // 
             // txt_Email
             // 
@@ -173,12 +157,56 @@
             this.btn_close.UseVisualStyleBackColor = false;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(8, 243);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "English";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(8, 275);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(110, 23);
+            this.button2.TabIndex = 15;
+            this.button2.Text = "Bahasa Indonesia";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 76);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 15);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Nama awal";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(12, 110);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(68, 15);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Nama akhir";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Registrasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(295, 310);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.btn_registrasi);
             this.Controls.Add(this.txt_ConfirmPass);
@@ -188,9 +216,7 @@
             this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.label_email);
             this.Controls.Add(this.txt_NamaAkhir);
-            this.Controls.Add(this.label_NaAk);
             this.Controls.Add(this.txt_NamaAwal);
-            this.Controls.Add(this.label_NaAw);
             this.Controls.Add(this.txt_Username);
             this.Controls.Add(this.label_Nama);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -206,9 +232,7 @@
 
         private Label label_Nama;
         private TextBox txt_Username;
-        private Label label_NaAw;
         private TextBox txt_NamaAwal;
-        private Label label_NaAk;
         private TextBox txt_NamaAkhir;
         private Label label_email;
         private TextBox txt_Email;
@@ -218,5 +242,9 @@
         private TextBox txt_ConfirmPass;
         private Button btn_registrasi;
         private Button btn_close;
+        private Button button1;
+        private Button button2;
+        private Label label2;
+        private Label label3;
     }
 }
