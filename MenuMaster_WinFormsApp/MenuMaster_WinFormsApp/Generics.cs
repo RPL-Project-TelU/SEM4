@@ -62,6 +62,8 @@ namespace MenuMaster_WinFormsApp
             alamat.Add(data);
         }
 
+       
+
     }
 
     

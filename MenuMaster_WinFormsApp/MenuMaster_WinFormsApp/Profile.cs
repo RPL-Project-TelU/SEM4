@@ -30,6 +30,7 @@ namespace MenuMaster_WinFormsApp
                 }
                 else
                 {
+
                     string Nama = textBox1.Text;
                     string Username = textBox2.Text;
                     string Email = textBox3.Text;
@@ -37,12 +38,19 @@ namespace MenuMaster_WinFormsApp
                     string Alamat = textBox5.Text;
 
                     g.AddNama(Nama);
-                    g.AddNama(Username);
-                    g.AddNama(Email);
-                    g.AddNama(Handphone);
-                    g.AddNama(Alamat);
+                    g.AddUsername(Username);
+                    g.AddEmail(Email);
+                    g.AddHandphone(Handphone);
+                    g.AddAlamat(Alamat);
 
                     MessageBox.Show("Data Berhasil disimpan");
+                    listBox1.Items.Add(Nama);
+                    listBox1.Items.Add(Username);
+                    listBox1.Items.Add(Email);
+                    listBox1.Items.Add(Handphone);
+                    listBox1.Items.Add(Alamat);
+
+
                 }
             }
             catch (Exception ex)
@@ -87,6 +95,11 @@ namespace MenuMaster_WinFormsApp
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

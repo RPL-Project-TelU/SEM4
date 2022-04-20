@@ -41,6 +41,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Kembali = new System.Windows.Forms.Button();
             this.Simpan = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +52,6 @@
             this.textBox1.Size = new System.Drawing.Size(125, 27);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "textBox1";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 
             // Nama
             // 
@@ -77,7 +77,6 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(125, 27);
             this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Email
             // 
@@ -94,7 +93,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(125, 27);
             this.textBox3.TabIndex = 5;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // Handphone
             // 
@@ -111,7 +109,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(125, 27);
             this.textBox4.TabIndex = 7;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // Alamat
             // 
@@ -128,7 +125,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(125, 27);
             this.textBox5.TabIndex = 9;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // pictureBox1
             // 
@@ -158,11 +154,21 @@
             this.Simpan.UseVisualStyleBackColor = true;
             this.Simpan.Click += new System.EventHandler(this.Simpan_Click);
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 20;
+            this.listBox1.Location = new System.Drawing.Point(586, 193);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(150, 104);
+            this.listBox1.TabIndex = 14;
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.Simpan);
             this.Controls.Add(this.Kembali);
             this.Controls.Add(this.pictureBox1);
@@ -198,5 +204,6 @@
         private PictureBox pictureBox1;
         private Button Kembali;
         private Button Simpan;
+        private ListBox listBox1;
     }
 }
