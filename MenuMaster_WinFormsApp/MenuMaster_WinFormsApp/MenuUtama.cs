@@ -21,5 +21,12 @@ namespace MenuMaster_WinFormsApp
         {
             this.Close();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MenuLogin ML = new MenuLogin();
+            ML.Show();
+        }
     }
 }
