@@ -21,7 +21,7 @@ namespace MenuMaster_WinFormsApp
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection konek = new SqlConnection (@"Data Source=DESKTOP-55FDHPN\AHMADFADHIL;Initial Catalog=MenuMaster;Integrated Security=True");
-            SqlDataAdapter adr = new SqlDataAdapter("select count (*) from Login where NamaUser = '" + textBox1.Text + "' and PasswordUser = '" + textBox2.Text + "'", konek);
+            SqlDataAdapter adr = new SqlDataAdapter("select count (*) from MenuMaster where NamaUser = '" + textBox1.Text + "' and PasswordUser = '" + textBox2.Text + "'", konek);
             DataTable dt = new DataTable();
 
             adr.Fill(dt);
