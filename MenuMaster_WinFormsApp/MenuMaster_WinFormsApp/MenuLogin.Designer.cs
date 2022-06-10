@@ -32,14 +32,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-<<<<<<< Updated upstream
-=======
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
->>>>>>> Stashed changes
+
             this.SuspendLayout();
             // 
             // button1
@@ -76,32 +69,12 @@
             this.button2.Text = "Close";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button3.Location = new System.Drawing.Point(155, 267);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 27);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "Registrasi";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // MenuLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
-<<<<<<< Updated upstream
-            this.ClientSize = new System.Drawing.Size(584, 561);
-=======
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(400, 400);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
->>>>>>> Stashed changes
+
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -121,11 +94,6 @@
         private TextBox textBox1;
         private TextBox textBox2;
         private Button button2;
-<<<<<<< Updated upstream
-=======
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private Button button3;
->>>>>>> Stashed changes
+
     }
 }
