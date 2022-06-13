@@ -20,7 +20,7 @@ namespace MenuMaster_WinFormsApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection konek = new SqlConnection (@"Data Source=DESKTOP-55FDHPN\AHMADFADHIL;Initial Catalog=MenuMaster;Integrated Security=True");
+            /*SqlConnection konek = new SqlConnection (@"Data Source=DESKTOP-55FDHPN\AHMADFADHIL;Initial Catalog=MenuMaster;Integrated Security=True");
             SqlDataAdapter adr = new SqlDataAdapter("select count (*) from Login where NamaUser = '" + textBox1.Text + "' and PasswordUser = '" + textBox2.Text + "'", konek);
             DataTable dt = new DataTable();
 
@@ -36,32 +36,8 @@ namespace MenuMaster_WinFormsApp
             {
                 MessageBox.Show("username atau password salah", "Warning !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-        }
-
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+            */
 
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-       
-
     }
 }
