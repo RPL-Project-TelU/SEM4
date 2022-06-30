@@ -22,12 +22,9 @@ namespace MenuMaster_WinFormsApp
 
         class Makanan
         {
+            public String nama { get; set; }
 
-            [JsonProperty("nama")]
-            public string nama { get; set; }
-
-            [JsonProperty("toko")]
-            public string toko { get; set; }
+            public String toko { get; set; }
 
         }
 
@@ -39,15 +36,19 @@ namespace MenuMaster_WinFormsApp
         private void TombolCari_Click(object sender, EventArgs e)
         {
             //bool input = bool.Parse(input);
-            string input = kolomPencarian.Text;
+
+            //bool input = Convert.ToBoolean("true");
+
+            String input = kolomPencarian.Text;
             
+
             Makanan data = new Makanan();
 
             // Membaca File JSON
-            String jsonString = File.ReadAllText("E:/kuliah semester 4/KPL (Kontruksi Perangkat Lunak)/Tugas/Fitur Pencarian/MenuMaster_WinFormsApp/MenuMaster_WinFormsApp/makanan.json");
+            string dataJson = File.ReadAllText("E:/kuliah semester 4/KPL (Kontruksi Perangkat Lunak)/Tugas/Fitur Pencarian/MenuMaster_WinFormsApp/MenuMaster_WinFormsApp/makanan.json");
 
             // Convert JSON menjadi Array
-            var deserial = JsonConvert.DeserializeObject<List<Makanan>>(jsonString);
+            var deserial = JsonConvert.DeserializeObject<List<Makanan>>(dataJson);
 
             Console.WriteLine(deserial[0]);
 
@@ -57,13 +58,17 @@ namespace MenuMaster_WinFormsApp
                 {
                     PencarianTersedia panggil = new PencarianTersedia();
                     panggil.Show();
+                    break;
                 }
                 else
                 {
                     PencarianTidakTersedia panggil = new PencarianTidakTersedia();
                     panggil.Show();
+                    break;
                 }
             }
+
+            Console.ReadLine();
         }
     }
 }

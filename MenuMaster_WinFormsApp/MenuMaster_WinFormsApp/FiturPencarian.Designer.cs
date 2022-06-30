@@ -47,7 +47,6 @@
             this.kolomPencarian.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.kolomPencarian.Location = new System.Drawing.Point(232, 220);
             this.kolomPencarian.Name = "kolomPencarian";
-            this.kolomPencarian.PasswordChar = '*';
             this.kolomPencarian.Size = new System.Drawing.Size(339, 23);
             this.kolomPencarian.TabIndex = 4;
             this.kolomPencarian.TextChanged += new System.EventHandler(this.kolomPencarian_TextChanged);
