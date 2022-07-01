@@ -1,0 +1,9 @@
+﻿C:\Users\desak\Documents\GitHub\MenuMaster_Keranjang\UnitTestResty\UnitTest1.cs
+C:\Users\desak\.nuget\packages\microsoft.net.test.sdk\16.11.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\desak\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\desak\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\desak\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\desak\.nuget\packages\mstest.testadapter\2.2.7\build\_common\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\desak\.nuget\packages\mstest.testadapter\2.2.7\build\_common\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\desak\.nuget\packages\mstest.testadapter\2.2.7\build\netcoreapp1.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\desak\.nuget\packages\mstest.testadapter\2.2.7\build\netcoreapp1.0\Microsoft.TestPlatform.AdapterUtilities.dll
