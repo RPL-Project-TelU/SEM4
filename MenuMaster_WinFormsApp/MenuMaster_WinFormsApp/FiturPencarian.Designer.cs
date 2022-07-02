@@ -30,6 +30,7 @@
         {
             this.TombolCari = new System.Windows.Forms.Button();
             this.kolomPencarian = new System.Windows.Forms.TextBox();
+            this.labelHasilPencarian = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TombolCari
@@ -51,11 +52,21 @@
             this.kolomPencarian.TabIndex = 4;
             this.kolomPencarian.TextChanged += new System.EventHandler(this.kolomPencarian_TextChanged);
             // 
+            // labelHasilPencarian
+            // 
+            this.labelHasilPencarian.AutoSize = true;
+            this.labelHasilPencarian.Location = new System.Drawing.Point(232, 257);
+            this.labelHasilPencarian.Name = "labelHasilPencarian";
+            this.labelHasilPencarian.Size = new System.Drawing.Size(0, 15);
+            this.labelHasilPencarian.TabIndex = 5;
+            this.labelHasilPencarian.Click += new System.EventHandler(this.labelHasilPencarian_Click);
+            // 
             // FiturPencarian
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 497);
+            this.Controls.Add(this.labelHasilPencarian);
             this.Controls.Add(this.kolomPencarian);
             this.Controls.Add(this.TombolCari);
             this.Name = "FiturPencarian";
@@ -69,5 +80,6 @@
 
         private Button TombolCari;
         private TextBox kolomPencarian;
+        private Label labelHasilPencarian;
     }
 }

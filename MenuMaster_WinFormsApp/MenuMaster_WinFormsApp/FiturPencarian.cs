@@ -1,15 +1,5 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+
 
 namespace MenuMaster_WinFormsApp
 {
@@ -20,13 +10,7 @@ namespace MenuMaster_WinFormsApp
             InitializeComponent();
         }
 
-        class Makanan
-        {
-            public String nama { get; set; }
-
-            public String toko { get; set; }
-
-        }
+       
 
         private void kolomPencarian_TextChanged(object sender, EventArgs e)
         {
@@ -35,40 +19,46 @@ namespace MenuMaster_WinFormsApp
 
         private void TombolCari_Click(object sender, EventArgs e)
         {
-            //bool input = bool.Parse(input);
-
-            //bool input = Convert.ToBoolean("true");
-
-            String input = kolomPencarian.Text;
-            
-
+            // Memanggil kelas Makanan
             Makanan data = new Makanan();
 
             // Membaca File JSON
             string dataJson = File.ReadAllText("E:/kuliah semester 4/KPL (Kontruksi Perangkat Lunak)/Tugas/Fitur Pencarian/MenuMaster_WinFormsApp/MenuMaster_WinFormsApp/makanan.json");
 
+            
+            
+            String input = kolomPencarian.Text;
+
             // Convert JSON menjadi Array
-            var deserial = JsonConvert.DeserializeObject<List<Makanan>>(dataJson);
+            var obj = JsonConvert.DeserializeObject<List<Makanan>>(dataJson);
 
-            Console.WriteLine(deserial[0]);
-
-            for (int i = 0; i<deserial.Count; i++)
+            Console.WriteLine(obj?[0]);
+            for (int i = 0; i < obj?.Count; i++)
             {
-                if (input == deserial[i].nama || input == deserial[i].toko)
+
+                if (input == obj[i].nama || input == obj[i].toko)
                 {
-                    PencarianTersedia panggil = new PencarianTersedia();
-                    panggil.Show();
+                    PencarianTersedia panggilTersedia;
+                    panggilTersedia = new PencarianTersedia();
+                    panggilTersedia.Show();
                     break;
                 }
                 else
                 {
-                    PencarianTidakTersedia panggil = new PencarianTidakTersedia();
-                    panggil.Show();
-                    break;
+                    labelHasilPencarian.Text = ("Maaf, hidangan yang kamu cari tidak tersedia");
                 }
+
             }
 
             Console.ReadLine();
+
+        }
+
+
+
+        private void labelHasilPencarian_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

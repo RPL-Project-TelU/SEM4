@@ -58,18 +58,18 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(87, 218);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 30);
+            this.label3.Size = new System.Drawing.Size(91, 30);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Nasi Goreng Sedap Rasa\r\nRp25.000";
+            this.label3.Text = "Nama Makanan\r\nNama Toko";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(275, 218);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 30);
+            this.label4.Size = new System.Drawing.Size(91, 30);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Nasi Goreng Mantap \r\nRp35.000";
+            this.label4.Text = "Nama Makanan\r\nNama Toko";
             // 
             // PencarianTersedia
             // 
