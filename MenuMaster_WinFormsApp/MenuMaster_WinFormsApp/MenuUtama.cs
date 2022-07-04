@@ -19,7 +19,7 @@ namespace MenuMaster_WinFormsApp
 
         private void Profile_Click(object sender, EventArgs e)
         {
-            Profile F2 = new Profile();
+            ProfileView F2 = new ProfileView();
             F2.Show();
 
 

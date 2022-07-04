@@ -1,6 +1,6 @@
 ﻿namespace MenuMaster_WinFormsApp
 {
-    partial class Profile
+    partial class ProfileView
     {
         /// <summary>
         /// Required designer variable.
@@ -162,8 +162,9 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(150, 104);
             this.listBox1.TabIndex = 14;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged_1);
             // 
-            // Profile
+            // ProfileView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -182,7 +183,7 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Nama);
             this.Controls.Add(this.textBox1);
-            this.Name = "Profile";
+            this.Name = "ProfileView";
             this.Text = "Profile";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

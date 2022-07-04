@@ -6,15 +6,14 @@ using System.Threading.Tasks;
 
 namespace MenuMaster_WinFormsApp
 {
-    internal class ProfileData
+    internal class ProfileModel
     {
         public string Nama { get; set; }
+        public string Username { get; set; }
         public string Email { get; set; }
+        public string Handphone { get; set; }
+        public string Alamat { get; set; }
 
-        public ProfileData(string nama, string email)
-        {
-            Nama = nama;
-            Email = email;
-        }
+
     }
 }
