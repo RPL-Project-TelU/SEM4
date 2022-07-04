@@ -22,6 +22,7 @@ namespace Pencarian.Test
  
         }
 
+        [TestMethod]
         public void TestPencarianTersedia()
         {
             string[] makanan = { "nasi goreng", "mie ayam", "ayam goreng madu, ayam bakar madu", "bebek goreng, bebek bakar, ayam bakar, ayam goreng, lele goreng" };

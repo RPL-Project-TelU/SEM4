@@ -1,6 +1,6 @@
 ﻿namespace MenuMaster_WinFormsApp
 {
-    partial class FiturPencarian
+    partial class pencarianView
     {
         /// <summary>
         /// Required designer variable.
