@@ -9,10 +9,9 @@ namespace MenuMaster_WinFormsApp
             InitializeComponent();
         }
 
-       
-
         private void kolomPencarian_TextChanged(object sender, EventArgs e)
         {
+
 
         }
 
@@ -25,8 +24,6 @@ namespace MenuMaster_WinFormsApp
             data.Mencari(input);
 
         }
-
-
 
         private void labelHasilPencarian_Click(object sender, EventArgs e)
         {
